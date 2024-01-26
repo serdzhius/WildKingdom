@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240124212240">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240126155253">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,16 +20,16 @@
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item">
-								<a class="menu__link" href="#">Home</a>
+								<a data-goto=".hero" class="menu__link" href="#">Home</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">About</a>
+								<a data-goto-header data-goto=".about-us" class="menu__link" href="#">About</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">Products</a>
+								<a data-goto-header data-goto=".products" class="menu__link" href="#">Products</a>
 							</li>
 							<li class="menu__item">
-								<a class="menu__link" href="#">Services</a>
+								<a data-goto-header data-goto=".services" class="menu__link" href="#">Services</a>
 							</li>
 						</ul>
 					</nav>
@@ -59,7 +59,7 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="hero">
+			<section data-watch="navigator" class="hero">
 				<div class="hero__container">
 					<div class="hero__body">
 						<div class="hero__content">
@@ -107,11 +107,12 @@
 					</div>
 				</div>
 				<picture><source srcset="img/hero/bg.webp" type="image/webp"><img src="img/hero/bg.jpg" class="hero__bg" alt="Hero Background"></picture>
+				<a data-goto=".hero" class="up _icon-slider-arrow" href="#"></a>
 			</section>
-			<section class="about-us">
+			<section data-prlx-parent data-watch="navigator" class="about-us">
 				<div class="about-us__container">
 					<div class="about-us__body">
-						<div class="about-us__image">
+						<div data-prlx class="about-us__image">
 							<picture><source srcset="img/about-us/image.webp" type="image/webp"><img src="img/about-us/image.jpg" alt="Image"></picture>
 						</div>
 						<div class="about-us__content">
@@ -120,7 +121,8 @@
 								<h2 class="block-header__title">Treating pet like Royalty</h2>
 								<div class="block-header__text">
 									<blockquote>“They’re not just pets, they’re family”</blockquote>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in
+										tempus elit tristique. Aliquam ultrices sem non.</p>
 								</div>
 								<a href="#" class="block-header__button button"><span>Explore</span></a>
 							</div>
@@ -148,17 +150,18 @@
 					</div>
 				</div>
 			</section>
-			<section class="products">
+			<section data-watch="navigator" class="products">
 				<div class="products__container">
 					<div class="products__block-header block-header block-header--center">
 						<div class="block-header__label">Our Products</div>
 						<h2 class="block-header__title">For all your pet needs</h2>
 						<div class="block-header__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus
+								elit.</p>
 						</div>
 					</div>
 					<div class="products__items">
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/01.webp" type="image/webp"><img src="img/products/01.png" alt="Image"></picture>
@@ -179,7 +182,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/02.webp" type="image/webp"><img src="img/products/02.png" alt="Image"></picture>
@@ -200,7 +203,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/03.webp" type="image/webp"><img src="img/products/03.png" alt="Image"></picture>
@@ -221,7 +224,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/04.webp" type="image/webp"><img src="img/products/04.png" alt="Image"></picture>
@@ -242,7 +245,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/05.webp" type="image/webp"><img src="img/products/05.png" alt="Image"></picture>
@@ -263,7 +266,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/06.webp" type="image/webp"><img src="img/products/06.png" alt="Image"></picture>
@@ -284,7 +287,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/07.webp" type="image/webp"><img src="img/products/07.png" alt="Image"></picture>
@@ -305,7 +308,7 @@
 								</ul>
 							</div>
 						</article>
-						<article class="products__item item-product">
+						<article data-watch class="products__item item-product">
 							<div class="item-product__header">
 								<div class="item-product__image-ibg--contain">
 									<picture><source srcset="img/products/08.webp" type="image/webp"><img src="img/products/08.png" alt="Image"></picture>
@@ -330,9 +333,9 @@
 					<a class="products__button button" href="#"><span>Explore</span></a>
 				</div>
 			</section>
-			<section class="services">
+			<section data-prlx-parent data-watch="navigator" class="services">
 				<div class="services__container">
-					<div class="services__image">
+					<div data-prlx class="services__image">
 						<picture><source srcset="img/services/image.webp" type="image/webp"><img src="img/services/image.jpg" alt="Image"></picture>
 					</div>
 					<div class="services__block-header block-header block-header--white">
@@ -340,33 +343,34 @@
 						<h2 class="block-header__title">Quality Things for Loving Pets</h2>
 						<div class="block-header__text">
 							<blockquote>“More than a Pet Store…”</blockquote>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus elit tristique. Aliquam ultrices sem non.</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras aliquam mi id augue ultrices, in tempus
+								elit tristique. Aliquam ultrices sem non.</p>
 						</div>
 						<a class="block-header__button button button--border" href=""><span>Explore</span></a>
 					</div>
 				</div>
 			</section>
-			<div class="gallery">
+			<div data-prlx-parent data-watch class="gallery">
 				<div data-gallery class="gallery__container">
-					<div class="gallery__item">
+					<div data-prlx class="gallery__item">
 						<a class="gallery__image" href="img/gallery/01.jpg">
 							<picture><source data-srcset="img/gallery/01.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src src="img/gallery/01.jpg" alt="Image"></picture>
 						</a>
 						<a class="gallery__link _icon-slider-arrow" href="#"><span>Taking dogs care to the next level</span></a>
 					</div>
-					<div class="gallery__item">
+					<div data-prlx class="gallery__item">
 						<a class="gallery__image" href="img/gallery/02.jpg">
 							<picture><source data-srcset="img/gallery/02.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src src="img/gallery/02.jpg" alt="Image"></picture>
 						</a>
 						<a class="gallery__link _icon-slider-arrow" href="#"><span>Taking dogs care to the next level</span></a>
 					</div>
-					<div class="gallery__item">
+					<div data-prlx class="gallery__item">
 						<a class="gallery__image" href="img/gallery/03.jpg">
 							<picture><source data-srcset="img/gallery/03.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src src="img/gallery/03.jpg" alt="Image"></picture>
 						</a>
 						<a class="gallery__link _icon-slider-arrow" href="#"><span>Taking dogs care to the next level</span></a>
 					</div>
-					<div class="gallery__item">
+					<div data-prlx class="gallery__item">
 						<a class="gallery__image" href="img/gallery/04.jpg">
 							<picture><source data-srcset="img/gallery/04.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src src="img/gallery/04.jpg" alt="Image"></picture>
 						</a>
@@ -374,6 +378,91 @@
 					</div>
 				</div>
 			</div>
+			<section data-prlx-parent data-watch class="contacts">
+				<div class="contacts__container">
+					<div class="contacts__media media-contacts">
+						<div class="media-contacts__images">
+							<div class="media-contacts__block-image">
+								<picture><source srcset="img/contacts/01.webp" type="image/webp"><img data-prlx class="media-contacts__image" src="img/contacts/01.jpg" alt="Image"></picture>
+								<a class="media-contacts__play _icon-play" target="_blank" href="#"><span></span></a>
+							</div>
+							<div class="media-contacts__block-image">
+								<picture><source srcset="img/contacts/02.webp" type="image/webp"><img data-prlx class="media-contacts__image" src="img/contacts/02.jpg" alt="Image"></picture>
+							</div>
+						</div>
+					</div>
+					<div class="contacts__block-header block-header">
+						<div class="block-header__label">Contact us</div>
+						<h2 class="block-header__title">Come for the care, leave with a smile</h2>
+						<address class="block-header__contacts contacts-items">
+							<ul class="contacts-items__item _icon-clock">
+								<li>Monday/Friday 9:00-23:00</li>
+								<li>Saturday 10:00-21:00</li>
+							</ul>
+							<ul class="contacts-items__item _icon-location">
+								<li><a href="+0123456789">+012-345-6789</a></li>
+								<li><a href="TheWildKingdom@contact.com">TheWildKingdom@contact.com</a></li>
+								<li>9889 Lorem Ipsum street, Pellentesque, CA, USA</li>
+							</ul>
+						</address>
+						<a class="block-header__button button" href=""><span>Contact</span></a>
+					</div>
+				</div>
+			</section>
+			<section data-watch class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__icon">
+									<img src="img/icons/review.svg" alt="Image">
+								</div>
+								<blockquote class="reviews__item">
+									<div class="reviews__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+											Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+										</p>
+									</div>
+									<cite class="reviews__author">Etiam vulputate</cite>
+								</blockquote>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__icon">
+									<img src="img/icons/review.svg" alt="Image">
+								</div>
+								<blockquote class="reviews__item">
+									<div class="reviews__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+											Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+										</p>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+											Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+										</p>
+									</div>
+									<cite class="reviews__author">Etiam vulputate</cite>
+								</blockquote>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__icon">
+									<img src="img/icons/review.svg" alt="Image">
+								</div>
+								<blockquote class="reviews__item">
+									<div class="reviews__text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vulputate pharetra ante id congue.
+											Cras feugiat, diam a placerat posuere, arcu risus porta elit, sed finibus magna lorem ut turpis.
+										</p>
+									</div>
+									<cite class="reviews__author">Etiam vulputate</cite>
+								</blockquote>
+							</div>
+						</div>
+						<div class="reviews__arrows">
+							<button class="reviews__arrow reviews__arrow--prev _icon-slider-arrow"></button>
+							<button class="reviews__arrow reviews__arrow--next _icon-slider-arrow"></button>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -433,7 +522,7 @@
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240124212240"></script>
+	<script src="js/app.min.js?_v=20240126155253"></script>
 </body>
 
 </html>
